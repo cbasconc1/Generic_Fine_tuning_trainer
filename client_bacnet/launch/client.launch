@@ -1,0 +1,10 @@
+<launch>
+    <arg name="Dev_topic" default="/final_device"/>
+    <arg name="Lev_topic" default="/final_level"/>
+
+    <node pkg="client_bacnet" type="client_test.py" name="client_node" output="screen">
+        <param name ="DEV_param" type = "string" value="$(arg Dev_topic)"/>
+        <param name ="LEV_param" type = "string" value="$(arg Lev_topic)"/>
+
+    </node>
+</launch>

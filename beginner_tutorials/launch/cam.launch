@@ -1,0 +1,24 @@
+<launch>
+
+    <arg name ="camera_hand_pose" default = "/dev/video1"/>  <!-- CAMARA DE HANDPOSE-->
+    <arg name ="camera_yolo" default = "/dev/video1"/>  <!-- CAMARA DE  LOCALIZACIÓN-->
+   
+
+    <node name = "my_webcam" pkg="beginner_tutorials" type = "Picture.py" output = "screen">
+
+        <param name="camera_hand_pose" type="string" value="$(arg camera_hand_pose)" />
+        <param name="camera_yolo" type="string" value="$(arg camera_yolo)" />
+
+    </node>
+
+    <!-- <node name="Display_1" pkg="beginner_tutorials" type="listener.py" output="screen"/>
+    <node name="Display_2" pkg="beginner_tutorials" type="listener2.py" output="screen"/> 
+    -->
+</launch> 
+
+
+
+    
+
+
+    

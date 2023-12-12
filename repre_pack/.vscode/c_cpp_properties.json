@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/cbas/ROS_Workspaces/nodes_prueba/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/cbas/ROS_Workspaces/nodes_prueba/src/beginner_tutorials/include/**",
+        "/home/cbas/ROS_Workspaces/nodes_prueba/src/client_bacnet/include/**",
+        "/home/cbas/ROS_Workspaces/nodes_prueba/src/darknet_ros/darknet_ros/include/**",
+        "/home/cbas/ROS_Workspaces/nodes_prueba/src/repre_pack/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

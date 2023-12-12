@@ -1,0 +1,26 @@
+<launch>
+
+    <arg name="gesture_value_1_subs" default="/gesture/hand_sign_1"/>
+    <arg name="gesture_value_2_subs" default="/gesture/hand_sign_2"/>
+
+    <arg name="voice_value_subs" default="/speech_recognition/final_result"/> 
+    <arg name="final_Device" default="/final_device"/> 
+    <arg name="final_Level" default="/final_level"/> 
+    <arg name="final_Location" default="/darknet_ros/bounding_boxes"/> 
+
+
+
+
+    <node name="Neural_network"  pkg="repre_pack" type="network.py" output="screen">
+
+        <param name="gesture_value_1_subs" type="string" value="$(arg gesture_value_1_subs)"/> 
+        <param name="gesture_value_2_subs" type="string" value="$(arg gesture_value_2_subs)"/> 
+        <param name="voice_value_subs" type="string" value="$(arg voice_value_subs)"/>
+        
+
+        <param name="final_device" type="string" value="$(arg final_Device)"/> 
+        <param name="final_level" type="string" value="$(arg final_Level)"/> 
+
+    </node>
+
+</launch>
